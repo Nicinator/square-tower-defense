@@ -1,0 +1,107 @@
+body, html {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+canvas {
+    border: 1px solid black;
+    z-index: 2;
+}
+
+#grid {
+    opacity: 0.05;
+    z-index: 1;
+    border: none;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.overlay select {
+    font-size: 26px;
+    border-radius: 5px;
+    border: 2px solid #555555;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.overlay button {
+    font-size: 26px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 2px solid #555555;
+    padding: 5px 15px;
+    outline: none;
+    transition: 0.5s all;
+    background-color: white;
+}
+
+.overlay button:hover {
+    background-color: #CCCCCC;
+}
+
+#upgradeButton {
+    background-color: #50FF50;
+    display: none;
+}
+
+#upgradeButton:hover {
+    background-color: #10BF10;
+}
+
+#sellButton {
+    background-color: #FF5050;
+    display: none;
+}
+
+#sellButton:hover {
+    background-color: #BF1010;
+}
+
+#description {
+    font-size: 26px;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 50px;
+    flex-direction: column;
+    z-index: 2;
+}
+
+#menu select {
+    font-size: 22px;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #555555;
+}
+
+#menu p {
+    font-size: 18px;
+    margin: 10px 0;
+}

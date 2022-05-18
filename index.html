@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square Tower Defense</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <canvas id="grid" width="1" height="1"></canvas>
+    <canvas id="canvas" width="1" height="1"></canvas>
+    <div class="overlay" id="overlay">
+        <select id="mapSelector">
+            <option value="" selected disabled>Map auswählen</option>
+            <option value="Schlangen">Schlangen (Leicht, 1850x850)</option>
+            <option value="Startup">Startup (Mittel, 1850x850)</option>
+            <option value="Kreisel">Kreisel (Mittel, 450x450)</option>
+            <option value="Quadratboss">Quadratboss (Schwer, 600x600)</option>
+            <option value="Linie">Die Linie (Schwer, 600x150)</option>
+        </select>
+        <button onclick="startGame()" id="startButton">Start</button>
+        <button id="upgradeButton">Verbessern (x$)</button>
+        <button id="sellButton">Verkaufen</button>
+    </div>
+
+    <div id="menu">
+        <p id="moneySign">50$</p>
+        <select id="towerSelector">
+            <option value="shooter" selected>Shooter (25$)</option>
+            <option value="bomb">Bombe (50$)</option>
+            <option value="sniper">Scharfschütze (150$)</option>
+            <option value="minigun">Minigun (500$)</option>
+            <option value="plasma canon">Plasmakanone (750$)</option>
+            <option value="laser">Laser (3500$)</option>
+        </select>
+        <p id="levelSign">Level: 0</p>
+    </div>
+
+    <script src="js/mapPart.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/enemy.js"></script>
+    <script src="js/level.js"></script>
+    <script src="js/projectile.js"></script>
+    <script src="js/tower.js"></script>
+</body>
+</html>
